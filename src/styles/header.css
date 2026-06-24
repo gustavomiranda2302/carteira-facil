@@ -1,0 +1,11 @@
+header{
+    display: flex;
+    height: min(80px,10vh);
+    width: 100vw;
+    border: solid 1px red;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+

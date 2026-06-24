@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-primary: 'Inter', system-ui, sans-serif;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.75rem;
+    --fs-2xl: 2.25rem;
+}
+
+body {
+    font-family: var(--font-primary);
+}
