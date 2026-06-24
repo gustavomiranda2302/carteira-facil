@@ -1,43 +1,26 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f172a;
+  --color-border: #334155;
+  --color-text: #e2e8f0;
+  --color-card: #1e293b;
+  --color-primary: #2563eb;
+  --color-accent: #38bdf8;
+  --color-cta: #10b981;
+  --color-warning: #f97316;
+  --color-danger: #ef4444;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
-
-:root {
-    --font-primary: 'Inter', system-ui, sans-serif;
-
-    --bg-color: #0F172A;
-    --border-color: #334155;
-    --text-color: #E2E8F0;
-    --secondary-text-color: #94A3B8;
-    --card-color: #1E293B;
-    --primary-color: #2563EB;
-    --accent-color: #38BDF8;
-    --cta-color: #10B981;
-    --anchor-color: #324496;
-    --warning-color: #F97316;
-    --danger-color: #EF4444;
-
-    --fs-sm: 0.875rem;
-    --fs-base: 1rem;
-    --fs-lg: 1.25rem;
-    --fs-xl: 1.75rem;
-    --fs-2xl: 2.25rem;
-}
-
 h1,
 h2,
 h3 {
-    color: var(--text-color);
-}
-
-body {
-    font-family: var(--font-primary);
+  color: var(--text-color);
 }
