@@ -4,6 +4,7 @@
   --color-bg: #0f172a;
   --color-border: #334155;
   --color-text: #e2e8f0;
+  --color-text2: #94a3b8;
   --color-card: #1e293b;
   --color-anchor: #324496;
   --color-primary: #2563eb;
@@ -19,10 +20,19 @@
   --text-lg: 1.25rem;
   --text-xl: 1.75rem;
   --text-2xl: 2.25rem;
+
+  --animate-swipe: swipe 20s linear infinite;
 }
-h1,
-h2,
-h3,
-p {
-  color: var(--text-color);
+
+.animate-swipe:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+@keyframes swipe {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
