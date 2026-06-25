@@ -1,6 +1,12 @@
 import "../styles/index.css"
 import wallet from "../assets/wallet.svg"
+import { useNavigate } from "react-router-dom"
+
 function App() {
+  const navigate = useNavigate();
+  const navigateToLogin = () => {
+    navigate("/login");
+  }
 
 
   return (
@@ -14,13 +20,13 @@ function App() {
           <a href="#footer">
             <button className="bg-cta cursor-pointer border border-border text-md rounded-lg py-2 px-8 w-32 h-14 text-center ">Sobre</button>
           </a>
-          <button className="bg-cta cursor-pointer border border-border text-md rounded-lg py-2 px-8 w-32 h-14 text-center hover:bg-accent">Login</button>
+          <button className="bg-cta cursor-pointer border border-border text-md rounded-lg py-2 px-8 w-32 h-14 text-center " onClick={navigateToLogin}>Login</button>
 
         </div>
 
       </header>
       <main className="bg-card min-h-screen"></main>
-      <footer id="footer" className=" bg-bg min-h-10 text-text" ><p>teste</p></footer>
+      <footer id="footer" className=" bg-bg min-h-10 " ><p>teste</p></footer>
 
     </>
   )
