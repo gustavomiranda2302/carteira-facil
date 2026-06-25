@@ -21,7 +21,7 @@
   --text-xl: 1.75rem;
   --text-2xl: 2.25rem;
 
-  --animate-swipe: swipe 20s linear infinite;
+  --animate-swipe: swipe 30s linear infinite;
 }
 
 .animate-swipe:hover {

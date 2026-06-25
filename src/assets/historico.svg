@@ -1,0 +1,28 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corpo do calendário -->
+  <path fill="#2563ebDCE2E2" d="M80 96h352a16 16 0 0 1 16 16v352a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16z"/>
+  <!-- Header do calendário -->
+  <path fill="#324496" d="M64 112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16v80H64z"/>
+  <!-- Argolas -->
+  <path fill="#324496" d="M168 48h24v80h-24zm152 0h24v80h-24z"/>
+  <!-- Linha divisória -->
+  <path fill="#2563ebB9C5C6" d="M64 192h384v16H64z"/>
+  <!-- Dias — linha 1 -->
+  <rect x="96" y="232" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="168" y="232" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="240" y="232" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="312" y="232" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="384" y="232" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <!-- Dias — linha 2 -->
+  <rect x="96" y="304" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="168" y="304" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="240" y="304" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="312" y="304" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="384" y="304" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <!-- Dias — linha 3 -->
+  <rect x="96" y="376" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="168" y="376" width="48" height="48" rx="6" fill="#2563ebB9C5C6"/>
+  <rect x="240" y="376" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="312" y="376" width="48" height="48" rx="6" fill="#324496"/>
+  <rect x="384" y="376" width="48" height="48" rx="6" fill="#324496"/>
+</svg>

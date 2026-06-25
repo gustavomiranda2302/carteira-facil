@@ -1,7 +1,11 @@
-import "../styles/index.css"
-import wallet from "../assets/wallet.svg"
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import wallet from "../assets/wallet.svg";
+import stock from "../assets/stockMarket.svg"
+import pie from "../assets/pieGraph.svg"
 import Card from "../components/Card";
+import aporte from "../assets/aporte.svg"
+import historico from '../assets/historico.svg'
+import "../styles/index.css";
 
 function App() {
   const navigate = useNavigate();
@@ -13,52 +17,56 @@ function App() {
   return (
     <>
       <header className="flex justify-between px-2 py-1 border-2 border-border bg-bg text-text h-[10vh] w-full  items-center overflow-hidden">
-        <div className=" flex items-center   w-1/2 h-1/1 py-3 box-border">
+        <div className="box-border flex items-center w-1/2 py-3 h-1/1">
           <img src={wallet} alt="icone-carteira" />
           <h1 className="text-2xl">Carteira facil</h1>
         </div >
-        <div className=" flex px-4 w-1/2 h-12/12 justify-end items-center gap-2">
+        <div className="flex items-center justify-end w-1/2 gap-2 px-4 h-12/12">
           <a href="#footer">
-            <button className="bg-cta cursor-pointer border border-border text-md rounded-lg py-2 px-8 w-32 h-14 text-center ">Sobre</button>
+            <button className="w-32 px-8 py-2 text-center border rounded-lg cursor-pointer bg-transpparent border-border text-md h-14 hover:bg-primary/20">Sobre</button>
           </a>
-          <button className="bg-cta cursor-pointer border border-border text-md rounded-lg py-2 px-8 w-32 h-14 text-center hover:bg-accent " onClick={navigateToLogin}>Login</button>
+          <button className="w-32 px-8 py-2 text-center border rounded-lg cursor-pointer bg-primary border-border text-md h-14 hover:bg-accent " onClick={navigateToLogin}>Login</button>
         </div>
       </header>
 
-      <main className="flex flex-col bg-card min-h-screen py-5 items-center gap-y-4">
+      <main className="flex flex-col items-center w-full min-h-screen p-4 py-5 bg-card gap-y-4">
         <h1 className="text-5xl text-text">Sua carteira inteligente, do jeito que você merece</h1>
         <h2 className="text-3xl text-text2">Investir na B3 nunca foi tão facil</h2>
+        <p className=" text-text2">Investir bem começa por se organizar.
+          Visualize sua carteira, acompanhe sua alocação ideal e decida seus próximos passos com mais segurança.</p>
+        <div className="flex w-[45%] overflow-hidden  h-[35%]">
 
 
 
-        <div className=" flex border-2 border-red-500 min-h-[10%] w-fit overflow-hidden">
+          <div className="flex flex-row animate-swipe hover-animate-stop shrink-0 h-[33vh] gap-4">
+            <div className="flex gap-4 shrink-0">
+
+              <Card image={stock} title="Mercado em tempo real" text="Acompanhe ações e FIIs com cotações atualizadas direto da B3." />
+              <Card image={pie} title="Sua alocação ideal" text="Visualize o quanto cada ativo representa na sua carteira e onde rebalancear." />
+              <Card image={aporte} title="Próximo aporte" text=" Saiba exatamente em qual ativo investir no próximo aporte para manter sua estratégia." />
+              <Card image={historico} title="Evolução patrimonial" text="Acompanhe o crescimento da sua carteira ao longo do tempo." />
 
 
-
-          <div className="flex animate-swipe hover-animate-stop shrink-0 flex-row w-max">
-            <div className="flex shrink-0 min-w-full">
-
-              <Card image={wallet} title="teste" text="teste texto" />
-              <Card image={wallet} title="teste" text="teste texto" />
-              <Card image={wallet} title="teste" text="teste texto" />
 
             </div>
-            <div className="flex shrink-0 min-w-full" aria-hidden="true">
-              <Card image={wallet} title="teste" text="teste texto" />
-              <Card image={wallet} title="teste" text="teste texto" />
-              <Card image={wallet} title="teste" text="teste texto" />
 
+            <div className="flex gap-4 shrink-0" aria-hidden="true">
+              <Card image={stock} title="Mercado em tempo real" text="Acompanhe ações e FIIs com cotações atualizadas direto da B3." />
+              <Card image={pie} title="Sua alocação ideal" text="Visualize o quanto cada ativo representa na sua carteira e onde rebalancear." />
+              <Card image={aporte} title="Próximo aporte" text="Saiba exatamente em qual ativo investir no próximo aporte para manter sua estratégia." />
+              <Card image={historico} title="Evolução patrimonial" text="Acompanhe o crescimento da sua carteira ao longo do tempo." />
 
             </div>
 
           </div>
-
-
         </div>
+        <button className="p-4 mt-4 text-xl border rounded-lg cursor-pointer bg-cta border-primary text-text hover:bg-accent" onClick={navigateToLogin}>Começar agora</button>
+
+
 
 
       </main>
-      <footer id="footer" className=" bg-bg min-h-10 " ><p>teste</p></footer>
+      <footer id="footer" className="flex bg-bg min-h-10" ><p>teste</p></footer>
 
     </>
   )
