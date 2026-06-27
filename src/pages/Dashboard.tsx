@@ -1,8 +1,11 @@
-
+import { InputPassword } from "../components/Input"
 
 
 export default function Dashboard() {
     return (
-        <div></div>
+        <div>
+            <InputPassword placeholder="oi"></InputPassword>
+
+        </div>
     )
 }
