@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import Login from "../pages/Login";
 interface InputProps extends React.HTMLAttributes<HTMLDivElement> {
     placeholder: string
     type?: string
