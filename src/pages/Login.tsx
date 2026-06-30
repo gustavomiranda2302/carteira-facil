@@ -1,9 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import google from "../assets/google-svgrepo-com.svg"
-import facebook from "../assets/facebook-svgrepo-com.svg"
 import "../styles/index.css";
 import "../components/Input";
 import Input from "../components/Input";
+import { Google, Facebook } from "../assets/icons/index"
 export default function Login() {
     const navigate = useNavigate();
     const navigateToLogin = () => {
@@ -18,13 +17,12 @@ export default function Login() {
                 <div className="bg-text w-1/3 h-2/3 flex flex-col items-center pt-4 shadow-lg/20 shadow-primary rounded-2xl gap-y-4" >
                     <h1 className="text-2xl">Bem-vindo de volta!</h1>
                     <Input className="h-1/10 w-2/3" type="email" placeholder={"insira seu e-mail"} />
-                    <input type="email" name="email" id="mail" placeholder="insira seu e-mail" className="bg-primary/60 rounded-2xl shadow-md border border-border px-4 overflow-hidden w-2/3 h-1/10 text-clip" />
                     <Input className="h-1/10 w-2/3" type="password" placeholder={"insira sua senha"} />
                     <button className="w-32 px-8 py-2 text-center border rounded-lg cursor-pointer bg-primary border-border text-md h-14 hover:bg-accent " onClick={navigateToLogin}>Login</button>
                     <p className="text-text2">ou entre com</p>
                     <div className=" flex ">
-                        <img src={google} alt="google" className=" w-20 h-15 hover:cursor-pointer" />
-                        <img src={facebook} alt="facebook" className=" w-20 h-15 hover:cursor-pointer" />
+                        <Google className=" text-primary w-20 h-15 hover:cursor-pointer" />
+                        <Facebook className=" text-primary w-20 h-15 hover:cursor-pointer" />
                     </div>
                     <p className="text-text2">Manter Logado</p>
                     <input type="checkbox" name="keepLogin" id="KeepLogin" title='a' placeholder="" className="mt-0" />

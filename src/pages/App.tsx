@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import wallet from "../assets/wallet.svg";
+import { Wallet } from "lucide-react";
 import stock from "../assets/stockMarket.svg"
 import pie from "../assets/pieGraph.svg"
 import Card from "../components/Card";
@@ -18,7 +18,9 @@ function App() {
     <>
       <header className="flex justify-between px-2 py-1 border-2 border-border bg-bg text-text h-[10vh] w-full  items-center overflow-hidden">
         <div className="box-border flex items-center w-1/2 py-3 h-1/1">
-          <img src={wallet} alt="icone-carteira" />
+          <div className="text-anchor">
+            <Wallet size={48} />
+          </div>
           <h1 className="text-2xl">Carteira facil</h1>
         </div >
         <div className="flex items-center justify-end w-1/2 gap-2 px-4 h-12/12">
