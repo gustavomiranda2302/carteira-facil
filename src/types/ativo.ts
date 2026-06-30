@@ -1,8 +1,8 @@
 export type TipoAtivo = "acao" | "fii";
 
 export interface Ativo {
-  id: String;
-  ticker: String;
+  id: string;
+  ticker: string;
   tipo: TipoAtivo;
   quantidade: number;
   precoMedio: number;
