@@ -5,8 +5,8 @@ import Input from "../components/Input";
 import { Google, Facebook } from "../assets/icons/index"
 export default function Login() {
     const navigate = useNavigate();
-    const navigateToLogin = () => {
-        navigate("/dashboards");
+    const navigateToDashboard = () => {
+        navigate("/dashboard");
     }
 
     return (
@@ -18,7 +18,7 @@ export default function Login() {
                     <h1 className="text-2xl">Bem-vindo de volta!</h1>
                     <Input className="h-1/10 w-2/3" type="email" placeholder={"insira seu e-mail"} />
                     <Input className="h-1/10 w-2/3" type="password" placeholder={"insira sua senha"} />
-                    <button className="w-32 px-8 py-2 text-center border rounded-lg cursor-pointer bg-primary border-border text-md h-14 hover:bg-accent " onClick={navigateToLogin}>Login</button>
+                    <button className="w-32 px-8 py-2 text-center border rounded-lg cursor-pointer bg-primary border-border text-md h-14 hover:bg-accent " onClick={navigateToDashboard}>Login</button>
                     <p className="text-text2">ou entre com</p>
                     <div className=" flex ">
                         <Google className=" text-primary w-20 h-15 hover:cursor-pointer" />
